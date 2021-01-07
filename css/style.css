@@ -1,0 +1,88 @@
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif; 
+}
+
+.app{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin:50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+.pads{
+    width:100%;
+    display:flex;
+}
+
+.pads> div{
+    width: 100px;
+    height: 100px;
+    flex:1;
+}
+
+.pad1{
+    background-color: #7ae9ed;
+}
+
+.pad2{
+    background-color:#d749c4 ;
+}
+
+.pad3{
+    background-color: #f6d10a;
+}
+
+.pad4{
+    background-color:#24ae62 ;
+}
+
+.pad5{
+    background-color:#ff6530 ;
+}
+
+.pad6{
+    background-color:#fd1253 ;
+}
+
+@keyframes jump{
+    0%{
+        bottom:0%;
+        left:20%
+    }
+    50%{
+        bottom:50%;
+        left:50%;
+    }
+    100%{
+        bottom:0%;
+        left:80%;
+    }
+}
+
+.visual >div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom:0;
+    z-index: -1;
+}
